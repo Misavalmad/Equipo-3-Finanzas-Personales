@@ -21,7 +21,7 @@ Plataforma web enfocada en ofrecer asesoramiento y herramientas para el manejo d
 
 ## Requisitos del Product Owner
 
-Se confirma el cumplimiento del requisito del PO: **Hola PO**
+Se confirma el cumplimiento del requisito del PO:
 
 ### Psicologia del Color
 
