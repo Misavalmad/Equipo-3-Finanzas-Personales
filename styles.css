@@ -1,3 +1,27 @@
 .blue-title {
     color: #3e8daf;
 }
+.card{
+    background-color: #6bc3a3;
+    margin: 1rem;
+    border: none;
+}
+.card-text{
+    text-align: center;
+}
+.btn-blog{
+  display: flex;
+  justify-content: center;
+  background-color: #6bc3a3;
+  padding-bottom: 1rem;
+}
+.button-blog{
+    background-color: #3ea7af;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+}
+.button-blog:hover{
+    background-color: #2a637a;
+    font-weight: bold;
+}
