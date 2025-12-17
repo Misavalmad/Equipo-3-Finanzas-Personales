@@ -1,75 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Finanzas Personales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos-unificados.css">
 </head>
 <body>
-<section class="py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="images/image 2.webp" alt="Quienes somos" class="img-fluid">
-        </div>
-            <div class="col-md-6">
-                <h2 class="mb-4 blue-title">Quiénes somos</h2>
-                <p class="mb-4">Nosotros creemos que las finanzas pueden sentirse ligeras y claras. Acompañamos a las personas con un enfoque humano y sencillo, ayudándolas a tomar decisiones con calma y confianza.</p>
-                <p class='mb-4'>Trabajamos con transparencia y cercanía para que tu dinero deje de ser una preocupación y se convierta en una herramienta para vivir con tranquilidad.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section>  
- <h2>Ultimas entradas del blog</h2>
-    <div class="row row-cols-4 row-cols-md-12 row-cols-sm-12 card-blog">
-        <div class="col card">
-            <div class="card h-100">
-                <img src="images/image 3.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Es normal sentirse abrumado con el dinero. Aquí te explico por qué y cómo empezar a sentir más calma. </p>
-                </div>
-                <div class="btn-blog">
-                    <button type="button" class="btn btn-primary button-blog">
-                        Leer más
-                    </button>
-                </div>
-            </div>
-        </div>
-                <div class="col card">
-            <div class="card h-100">
-                <img src="images/image 4 and 7.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">5 errores comunes al administrar tu presupuesto (y cómo evitarlos)</p>
-                </div>
-                <div class="btn-blog">
-                    <button type="button" class="btn btn-primary button-blog">
-                        Leer más
-                    </button>
-                </div>
-            </div>
-        </div>
-                <div class="col card">
-            <div class="card h-100">
-                <img src="images/image 5.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Las finanzas son lo más importante para tu inversión. Aquí te mostramos cómo hacerlo.</p>
-                </div>
-                <div class="btn-blog">
-                    <button type="button" class="btn btn-primary button-blog">
-                        Leer más
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center flex-column" href="#">
+                    <img src="./logo.png" alt="Logo Finance" class="img-fluid" style="max-height: 60px;">
+                </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-<footer>    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active-custom" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-custom-gradient">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- SECCIÓN 1: FINANZAS SALUDABLES -->
+    <section class="hero-section" id="inicio">
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="text-content">
+                        <h1 class="hero-title">Finanzas<br>saludables</h1>
+                        <p class="hero-desc">Te ayudamos a resolver tus problemas financieros.</p>
+                        
+                        <div class="mt-5">
+                            <span class="category-label">Finanzas</span>
+                            <div class="social-icons">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="image-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: QUIENES SOMOS -->
+    <section class="py-5 bg-light" id="nosotros">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Quiénes Somos</h2>
+                    <p class="lead">Somos un equipo comprometido con tu bienestar financiero.</p>
+                    <p>Nuestra misión es brindarte las herramientas y el conocimiento necesario para que tomes el control de tus finanzas personales. Con honestidad y claridad, te acompañamos en cada paso hacia la libertad financiera.</p>
+                    <p>Creemos que todos merecen tener finanzas saludables y acceso a información de calidad que les permita tomar decisiones informadas sobre su dinero.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/images/image 2.webp" alt="Quienes Somos" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: ULTIMAS ENTRADAS DEL BLOG -->
+    <section class="py-5" id="ultimas-entradas">
+        <div class="container">
+            <h2 class="blog-section-title">Últimas entradas del blog</h2>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-1 card-blog">
+                <div class="col card-wrapper">
+                    <div class="card h-100">
+                        <img src="/images/image 3.webp" class="card-img-top" alt="Artículo 1">
+                        <div class="card-body">
+                            <p class="card-text">Es normal sentirse abrumado con el dinero. Aquí te explico por qué y cómo empezar a sentir más calma.</p>
+                        </div>
+                        <div class="btn-blog">
+                            <button type="button" class="btn btn-primary button-blog">
+                                Leer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-wrapper">
+                    <div class="card h-100">
+                        <img src="/images/image 4 and 7.webp" class="card-img-top" alt="Artículo 2">
+                        <div class="card-body">
+                            <p class="card-text">5 errores comunes al administrar tu presupuesto (y cómo evitarlos)</p>
+                        </div>
+                        <div class="btn-blog">
+                            <button type="button" class="btn btn-primary button-blog">
+                                Leer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-wrapper">
+                    <div class="card h-100">
+                        <img src="/images/image 5.webp" class="card-img-top" alt="Artículo 3">
+                        <div class="card-body">
+                            <p class="card-text">Las finanzas son lo más importante para tu inversión. Aquí te mostramos cómo hacerlo.</p>
+                        </div>
+                        <div class="btn-blog">
+                            <button type="button" class="btn btn-primary button-blog">
+                                Leer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: BLOG (Título Principal) -->
+    <section class="py-5 text-center bg-gradient-blog" id="blog">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4 blog-main-title">Blog</h1>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: EXPLORA POR CATEGORIA -->
+    <section class="py-4 bg-light" id="categorias">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-muted mb-4 fw-bold category-title">Explora por categoría</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <button class="btn btn-sm btn-category">Ahorro</button>
+                        <button class="btn btn-sm btn-category">Bienestar Financiero</button>
+                        <button class="btn btn-sm btn-category">Hábitos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: ARTICULOS DESTACADOS -->
+    <section class="py-5" id="articulos-destacados">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold featured-title">Artículos destacados</h2>
+            
+            <div class="row g-4">
+                <!-- Artículo 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card article-card h-100">
+                        <img src="/images/image 6.jpg" class="card-img-top" alt="Artículo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Cómo organizar tus finanzas personales sin complicarte la vida</h5>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-sm btn-read-more">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card article-card h-100">
+                        <img src="/images/image 4 and 7.webp" class="card-img-top" alt="Artículo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">5 errores comunes al administrar tu presupuesto y cómo evitarlos</h5>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-sm btn-read-more">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card article-card h-100">
+                        <img src="/images/image 8.jpg" class="card-img-top" alt="Artículo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Guía práctica para crear un presupuesto efectivo desde cero</h5>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-sm btn-read-more">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7: ES NORMAL SENTIRSE ABRUMADO -->
+    <section class="py-5 bg-light" id="articulo-especial">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card article-card-special shadow-lg">
+                        <img src="/images/image 8.jpg" class="card-img-top" alt="Es normal sentirse abrumado">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">¿Es normal sentirse abrumado?</h3>
+                            <p class="lead">Es completamente normal sentirse abrumado con el dinero. Aquí te explico por qué y cómo empezar a sentir más calma.</p>
+                            <p>Las finanzas personales pueden ser un tema estresante, especialmente cuando sientes que no tienes control sobre tus gastos o cuando las deudas parecen acumularse sin cesar.</p>
+                            <p>Lo primero que debes saber es que no estás solo. Muchas personas experimentan estos sentimientos, y la buena noticia es que hay estrategias comprobadas que pueden ayudarte a recuperar la tranquilidad financiera.</p>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-read-more btn-lg">Leer artículo completo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEXTO LEGAL -->
+    <section class="py-4">
+        <div class="container">
+            <p class="text-muted small text-center">
+                Todo el contenido proporcionado en este sitio web es solo con fines informativos y educativos. No constituye asesoramiento financiero, legal o profesional. 
+                Los resultados pueden variar según cada situación individual. Recomendamos consultar con un asesor financiero certificado antes de tomar cualquier decisión relacionada con sus deudas o finanzas personales.
+                El blog no se hace responsable por decisiones tomadas basadas en la información aquí presentada.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="custom-footer" id="contacto">
+        <div class="container">
+            <div class="row align-items-center footer-content">
+                <div class="col-md-8 d-flex align-items-center footer-left-section">
+                    <div class="footer-logo-container">
+                        <div class="logo-placeholder">
+                            <img src="./logo.png" class="logo-icon logo-icon-footer" alt="Logo Footer">
+                        </div>
+                        <div class="footer-text">
+                            <p>Honestidad y claridad en cada paso.</p>
+                            <p class="copyright">© 2025 Banco Finance, SA, Institución de Banca Múltiple.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</footer>
+</body>
 </html>
